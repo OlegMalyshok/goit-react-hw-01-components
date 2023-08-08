@@ -1,9 +1,9 @@
 import { ContainerStats, TitleStats, List, StatLi } from './Statistics.styled';
 
-export const StatisticsCard = ({ stats }) => {
+export const StatisticsCard = ({ stats, title }) => {
   return (
     <ContainerStats>
-      <TitleStats>UPLOAD STATS</TitleStats>
+      {title && <TitleStats>{title}</TitleStats>}
       <List>
         {stats.map(item => (
           <StatLi key={item.id} dataId={item.id}>

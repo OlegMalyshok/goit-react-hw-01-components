@@ -13,6 +13,7 @@ export const App = () => {
     <div>
       <ProfileCard items={userData} />
       <StatisticsCard stats={statisticsData} />
+      <StatisticsCard title="UPLOAD STATS" stats={statisticsData} />
       <FriendsListCard friends={friendsData} />
       <TransactionHistoryCard transactions={transactionsData} />
       <GlobalStyle />
